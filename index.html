@@ -1,6 +1,68 @@
 ---
 layout: default
-title: Bannerlord kr
+style: main
+title: Home
 ---
-<h1>{{ page.title }}</h1>
-<h2>Mount & Blade II: Bannerlord Korean patch</h2>
+
+<main class="main">
+    <div class="top-container">
+        <section class="video-container">
+            <video autoplay="autoplay" loop="" muted="" plays-inline="true" defaultmuted="" id="video-main">
+                <source src="/assets/video/bannerlord_main.mp4" type="video/mp4">
+            </video>
+        </section>
+
+        <section class="intro-container">
+            <h2 class="intro-title">The horns sound, the ravens gather!</h2>
+            <p class="intro-text">
+                An empire is torn by civil war. Beyond its borders, new kingdoms rise. Gird on your sword, don your
+                armour, summon your followers and ride forth to win glory on the battlefields of Calradia.
+            </p>
+            <a href="#" class="btn-orange">
+                <span class="discount">다운로드</span>
+            </a>
+        </section>
+    </div>
+
+    <article class="news-container">
+        <div class="title-wrap">
+            <h2 class="news-title">News and Updates</h2>
+            <a href="/news" class="btn-link">See All</a>
+        </div>
+
+        <ul class="news-list">
+            {% for post in site.posts %}
+                {% if forloop.index <= 3 %}
+                    <li>
+                        <a href="{{ post.url }}">
+                            <div class="list-image-wrap">
+                                <img src="{{ post.thumbnail }}" alt="{{ post.title }}">
+                            </div>
+
+                            <div class="list-info-wrap">
+                                <h3 class="list-title">{{ post.title }}</h3>
+                                <span class="list-date">{{ post.date | date_to_string }}</span>
+                                <div class="list-text">
+                                    {{ post.excerpt }}
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                {% else %}
+                    {% break %}
+                {% endif %}
+            {% endfor %}
+        </ul>
+    </article>
+
+    <section class="image-container">
+        <div class="container">
+            <h2>EARLY ACCESS</h2>
+            <p>
+                Mount & Blade II: Bannerlord is available to purchase in Early Access. You can stay up to date with
+                development news by following our social media channels and by joining our forum community.
+            </p>
+            <a href="https://www.taleworlds.com/en/Games/Bannerlord" class="btn-orange">WHY EARLY ACCESS?</a>
+        </div>
+    </section>
+</main>
