@@ -62,7 +62,7 @@
 
         li .list-image-wrap{
             @include size(60px, 60px);
-            @include margin(0 auto);
+            @include margin(0 auto 20px);
 
             img{
                 @include size(100%);
