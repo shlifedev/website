@@ -1,9 +1,6 @@
 - name: Home
   link: /
 
-- name: Resources
-  link: /resources
-
 - name: News
   link: /news
 

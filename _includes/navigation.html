@@ -1,5 +1,21 @@
-<nav>
-    {% for item in site.data.navigation %}
-        <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a>
-    {% endfor %}
-</nav>
+<div class="nav-container">
+    <nav class="nav">
+        <div class="nav-header">
+            <h1 class="nav-header-logo">
+                <a href="/">
+                    <img src="/assets/images/nav_logo.png" class="nav-header-logo-default" alt="Mount&Blade II Bannerlord">
+                    <img src="/assets/images/nav_logo_fixed.png" class="nav-header-logo-fixed" alt="Mount&Blade II Bannerlord">
+                </a>
+            </h1>
+        </div>
+        <ul class="nav-menu">
+            {% for item in site.data.navigation %}
+            <li>
+                <a href="{{ item.link }}" {% if page.url == item.link %}class="active"{% endif %}>
+                    {{ item.name }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</div>
