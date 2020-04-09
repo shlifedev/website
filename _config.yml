@@ -27,6 +27,9 @@ url: https://bannerlord.page
 twitter_username: kimchanhyung98
 github_username:  kimchanhyung98
 
+# google analytics setting
+google_analytics: "UA-163179069-1"
+
 # Build settings
 theme: minima
 plugins:
