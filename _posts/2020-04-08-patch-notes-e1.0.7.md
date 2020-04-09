@@ -7,12 +7,9 @@ categories: news
 ---
 
 ## Versions
-Native: e1.0.0  
-SandboxCore: e1.0.7  
-Sandbox: e1.0.7  
-Storymode: e1.0.7  
-CustomBattle: e1.0.7  
-
+KoreanTranslate 1.0.0
+- 테스터 전용 실시간 번역기능 추가
+- 한글 입출력 정상지원
 
 ## Multiplayer Crashes
 Fixed a crash that occurred while entering a multiplayer game.  
