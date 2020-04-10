@@ -58,6 +58,7 @@
 
     .btn-orange{
         @include size(null, 50px);
+        @include margin(0 15px);
         font-weight: 800;
         font-size: 18px;
         line-height: 54px;
