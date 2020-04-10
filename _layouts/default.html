@@ -4,12 +4,16 @@
         <meta charset="utf-8">
         <title>{{ page.title }}</title>
         <link rel="stylesheet" href="/assets/css/styles.css">
-        <link rel="stylesheet" href="/assets/css/{{ page.style }}.css">
-
+        {% if page.style %}
+            <link rel="stylesheet" href="/assets/css/{{ page.style }}.css">
+        {% endif %}
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700;800&display=swap">
 
         {% include analytics.html %}
         <script type="text/javascript" src="/assets/js/common.js"></script>
+        {% if page.script %}
+            <script type="text/javascript" src="/assets/js/{{ page.script }}.js"></script>
+        {% endif %}
     </head>
     <body>
         <div id="app">

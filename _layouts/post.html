@@ -1,7 +1,30 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_string }} - {{ page.author }}</p>
 
-{{ content }}
+<main class="main">
+    <div class="skin-container"></div>
+
+    <article class="post-container">
+        <div class="post-wrap">
+            <div class="post-header">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <span class="post-summary">Mount & Blade II: Bannerlord</span>
+                <span class="txt">|</span>
+                <span class="post-date">{{ page.date | date_to_string }}</span>
+                {% if page.author %}
+                <span class="txt">|</span>
+                <span class="post-source"><a href="{{ page.source }}">번역 : {{ page.author }}</a></span>
+                {% endif %}
+            </div>
+            {% if page.thumbnail%}
+            <div class="post-thumbnail">
+                <img src="{{ page.thumbnail }}" alt="{{ page.title }}">
+            </div>
+            {% endif %}
+            <div class="post-content">
+                {{ content }}
+            </div>
+        </div>
+    </article>
+</main>
