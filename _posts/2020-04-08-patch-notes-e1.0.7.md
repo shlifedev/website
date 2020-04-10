@@ -1,50 +1,55 @@
 ---
 layout: post
+style: post
+categories: news patchnote
 thumbnail: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/26623866/779f24b4675e5fab6b6110ab0e332597abcbd1f3.png
-title: Patch Notes e1.0.7
+title: 패치 노트 e1.0.7
 date: 2020-04-08 00:00:00 +0900
-categories: news
+author: jhs0620(jhee****)
+source: https://cafe.naver.com/warband/249356
 ---
 
-## Versions
-KoreanTranslate 1.0.0
-- 테스터 전용 실시간 번역기능 추가
-- 한글 입출력 정상지원
+## 버전
+    네이티브: e1.0.0
+    샌드박스코어: e1.0.7
+    샌드박스: e1.0.7
+    스토리 모드: e1.0.7
+    커스텀 배틀: e1.0.7
 
-## Multiplayer Crashes
-Fixed a crash that occurred while entering a multiplayer game.  
-Fixed a rare crash that happened when parsing a player's nickname for the death card.  
+## 멀티플레이 크래쉬
+ - 멀티플레이 게임에 접속할 때 발생하는 크러쉬 수정
+ - 플레이어 사망 시, 상대방 닉네임을 확인할 때 간혹 발생하는 크러쉬 수정
 
-## Singleplayer Crashes
-Fixed a crash relating to the player’s party failing to disband after the player was caught trying to sneak into a settlement.  
-Fixed a crash that occurred when the player laid siege to a settlement and the owner defected to an allied/neutral kingdom.  
-Fixed a crash that sometimes occurred when the player pressed the “Exit to Main Menu” button.  
-Fixed a crash that sometimes happened upon the completion of the “Weaken/Unify Empire” quest.  
-Fixed a crash that occurred when leaving a scene after activating the “Overpriced Raw Materials” quest.  
-Fixed a rare crash that occurred when leaving a scene after choosing to solve a quest with the lord solution.  
+## 싱글 플레이 크래쉬
+ - 플레이어가 정착지에 잠입 중 적에게 잡혔을 때, 파티가 해산되지 않는 것과 관련된 크래쉬를 수정
+ - 플레이어가 정착지를 포위 공격할 때, 상대 영주가 동맹국 또는 중립국으로 망명할 때 발생하는 크래쉬 수정
+ - `Exit to Main Menu`를 누를 때 발생하는 크래쉬 수정
+ - `Weaken/Unify Empire`가 완료될 때 가끔 발생하던 크래쉬 수정
+ - `Overpriced Raw Materials` 퀘스트 신을 떠날 때 발생하는 크래쉬 수정
+ - 퀘스트 중 선택지를 선택하고 떠나는 신에서 간혹 발생하는 크래쉬 수정
 
-## Character Development System
-Rebalanced two trade perks that increased the selling price of items by 5%. They now reduce trade penalties by 5% instead.  
-Balanced combat experience gain for tournaments and practice fights.  
+## 캐릭터 성장 시스템
+ - 거래 퍽에서 판매 아이템 가격을 5% 증가시켜주는 퍽 재조정. 이제 거래 페널티를 5% 감소시켜 줍니다.
+ - 토너먼트와 연습 경기에서 얻어지는 경험치 재조정.
 
-## Battles and Sieges
-Plunderable gold from each lord after a battle is capped to 10K.  
+## 전투와 공성
+ - 영주에게서 약탈할 수 있는 골드를 10K로 제한함.
 
-## Kingdoms and Diplomacy
-Clans that own a settlement will no longer be able to join a kingdom as a mercenary.  
-Reduced the drop rate of horses as loot by 65%.  
-Lords with an excess of 100k denars now act as if they have 100k when purchasing horses for their party.  
-Fixed the bug where individual lords or armies would keep attacking the player after agreeing on a safe passage or a peace barter.  
+## 왕국과 정책
+ - 영지를 소유하고 있는 클랜은 더 이상 다른 왕국에 용병으로 들어갈 수 없음.
+ - 말의 드랍률을 65%로 하향 조정.
+ - 100K 이상을 가진 영주들은 그들의 군대에 말을 구매할 때, 100K 이상을 가진 것과 같이 행동함.
+ - 평화 또는 통과 협정을 맺은 군대가 플레이어를 계속 공격하는 버그를 수정.
 
-## Clan and Party
-Fixed a bug which caused only Sturgian companions to be spawned and hireable in taverns.  
+## 클랜과 파티
+ - Sturgian 동료만 스폰되고 고용되던 버그를 고침.
 
-## Quests & Issues
-Fixed a rare bug in the main storyline conspiracy phase.  
+## 퀘스트와 이슈
+ - 메인 퀘스트의 `음모 단계`에서 간혹 발생하던 버그를 수정.
 
-Settlement Actions (Town, Village, Castle and Hideout)  
-Tournament maximum bet amount is reduced to 150 from 300 and odds for the player are now reducing after each tournament win. Max odds are increased to 3 from 2.  
-Tournament prizes pool now includes all items (weapons, armour, and horses only) which have a value between 250-2000 (average 500).  
+## 정착지 행동
+ - 토너먼트 배팅금액을 300에서 150으로 감소시켰으며, 토너먼트 우승 후 플레이어 배팅에 따른 상금이 줄어들고 있음. 플레이어의 상금 배당률을 2에서 3으로 증가.
+ - 토너먼트 경품은 250 ~ 2000 사이의 아이템(무기, 방어구, 말)을 포함한다. 평균 상품 금액은 500 디나르.
 
-## Other
-Khuzait Heavy Lancers skills are recalibrated to their initial level.  
+## 기타
+ - `Khuzait Heavy Lancers` 스킬을 초기 설정으로 재조정.
