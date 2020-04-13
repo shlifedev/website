@@ -5,7 +5,4 @@
   link: /news
 
 - name: About
-  link: /about
-
-- name: 모드번역
-  link: /request_mod
+  link: /about 
