@@ -6,3 +6,6 @@
 
 - name: About
   link: /about
+
+- name: 모드요청
+  link: /request_mod
