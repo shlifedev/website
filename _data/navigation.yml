@@ -1,11 +1,12 @@
 - name: Home
   link: /
 
+- name: 모드요청
+  link: /request_mod
+  
 - name: News
   link: /news
 
 - name: About
   link: /about
 
-- name: 모드요청
-  link: /request_mod
